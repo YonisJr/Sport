@@ -11,12 +11,14 @@ namespace Sport
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
+        /// 
+        ///12341444
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new auth());
         }
     }
 }
