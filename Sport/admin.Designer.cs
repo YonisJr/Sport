@@ -36,6 +36,7 @@
             this.окноДействий1ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.окноДействий1ToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.окноДействий1ToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -106,15 +107,26 @@
             this.окноДействий1ToolStripMenuItem4.Size = new System.Drawing.Size(139, 23);
             this.окноДействий1ToolStripMenuItem4.Text = "Окно действий 1";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "label1";
+            // 
             // admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(998, 598);
             this.ControlBox = false;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "admin";
+            this.Load += new System.EventHandler(this.admin_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -132,5 +144,6 @@
         private System.Windows.Forms.ToolStripMenuItem окноДействий1ToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem окноДействий1ToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem окноДействий1ToolStripMenuItem4;
+        private System.Windows.Forms.Label label1;
     }
 }

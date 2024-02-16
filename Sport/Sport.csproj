@@ -72,6 +72,9 @@
     <EmbeddedResource Include="auth.resx">
       <DependentUpon>auth.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="emp.ja-JP.resx">
+      <DependentUpon>emp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="emp.resx">
       <DependentUpon>emp.cs</DependentUpon>
     </EmbeddedResource>
