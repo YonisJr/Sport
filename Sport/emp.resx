@@ -121,6 +121,15 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="окноДействий2ToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 15.75pt, style=Bold</value>
+  </data>
+  <data name="окноДействий2ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 30</value>
+  </data>
+  <data name="окноДействий2ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Окно действий 2</value>
+  </data>
   <data name="toolStripMenuItem1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 15.75pt, style=Bold</value>
   </data>
@@ -139,29 +148,112 @@
   <data name="toolStripMenuItem2.Text" xml:space="preserve">
     <value>Окно действий 2</value>
   </data>
+  <data name="выходToolStripMenuItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="выходToolStripMenuItem.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
   <data name="выходToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Haettenschweiler, 15.75pt</value>
   </data>
   <data name="выходToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 30</value>
+    <value>61, 30</value>
   </data>
   <data name="выходToolStripMenuItem.Text" xml:space="preserve">
-    <value>      X      </value>
+    <value>             </value>
   </data>
-  <data name="окноДействий2ToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="toolStripMenuItem3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        TJ8sLPwPd0/jEflrzPsAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="toolStripMenuItem3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="toolStripMenuItem3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt</value>
+  </data>
+  <data name="toolStripMenuItem3.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="toolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 30</value>
+  </data>
+  <data name="toolStripMenuItem3.Text" xml:space="preserve">
+    <value>             </value>
+  </data>
+  <data name="создатьГрамотуToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 15.75pt, style=Bold</value>
   </data>
-  <data name="окноДействий2ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 30</value>
+  <data name="создатьГрамотуToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>212, 30</value>
   </data>
-  <data name="окноДействий2ToolStripMenuItem.Text" xml:space="preserve">
-    <value>Окно действий 2</value>
+  <data name="создатьГрамотуToolStripMenuItem.Text" xml:space="preserve">
+    <value>    Создать грамоту    </value>
   </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1024, 34</value>
+    <value>1541, 34</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
@@ -180,7 +272,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>21</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -207,17 +299,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>19</value>
+  </data>
+  <data name="button3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="button3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 15.75pt, style=Bold</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>323, 421</value>
+    <value>462, 466</value>
   </data>
   <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
     <value>230, 54</value>
@@ -238,7 +332,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>373, 33</value>
@@ -259,7 +353,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>0</value>
+  </data>
+  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 15.75pt, style=Bold</value>
@@ -268,7 +365,7 @@
     <value>NoControl</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>786, 399</value>
+    <value>623, 505</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
     <value>230, 54</value>
@@ -289,7 +386,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>20</value>
+  </data>
+  <data name="button2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 15.75pt, style=Bold</value>
@@ -319,7 +419,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>18</value>
+  </data>
+  <data name="button4.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="button4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 15.75pt, style=Bold</value>
@@ -328,7 +431,7 @@
     <value>NoControl</value>
   </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 395</value>
+    <value>447, 445</value>
   </data>
   <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
     <value>230, 54</value>
@@ -349,7 +452,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 359</value>
@@ -370,7 +473,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="pictureBox1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
@@ -689,7 +792,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
     <value>890, 291</value>
@@ -710,7 +813,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="textBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 21.75pt</value>
@@ -734,7 +837,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="textBox2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 21.75pt</value>
@@ -758,7 +861,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="textBox3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 21.75pt</value>
@@ -782,7 +885,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="textBox4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 21.75pt</value>
@@ -806,7 +909,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="textBox5.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 21.75pt</value>
@@ -830,7 +933,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox5.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="textBox6.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 21.75pt</value>
@@ -854,16 +957,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox6.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 14.25pt, style=Bold</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 61</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
+    <value>59, 23</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -881,10 +987,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 14.25pt, style=Bold</value>
   </data>
   <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -893,7 +1002,7 @@
     <value>13, 86</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
+    <value>59, 23</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -911,10 +1020,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 14.25pt, style=Bold</value>
   </data>
   <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -923,7 +1035,7 @@
     <value>14, 111</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
+    <value>59, 23</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -941,10 +1053,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 14.25pt, style=Bold</value>
   </data>
   <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -953,7 +1068,7 @@
     <value>16, 131</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
+    <value>59, 23</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -971,10 +1086,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 14.25pt, style=Bold</value>
   </data>
   <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -983,7 +1101,7 @@
     <value>16, 149</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
+    <value>59, 23</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -1001,7 +1119,40 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 14.25pt, style=Bold</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 172</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 23</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1013,7 +1164,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1024, 461</value>
+    <value>1541, 567</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -1040,6 +1191,18 @@
     <value>окноДействий2ToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;окноДействий2ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;создатьГрамотуToolStripMenuItem.Name" xml:space="preserve">
+    <value>создатьГрамотуToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;создатьГрамотуToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem3.Name" xml:space="preserve">
+    <value>toolStripMenuItem3</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem3.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

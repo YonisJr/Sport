@@ -16,5 +16,12 @@ namespace Sport
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            admin ad    = new admin();
+            ad.Show();
+            this.Hide();
+        }
     }
 }

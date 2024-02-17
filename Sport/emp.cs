@@ -48,6 +48,13 @@ namespace Sport
             textBox6.Location = new Point(30,700);
 
             label1.Location = new Point(5,1065);
+
+            label2.Location = new Point(28, 77);
+            label3.Location = new Point(28, 197);
+            label4.Location = new Point(28, 317);
+            label5.Location = new Point(28, 437);
+            label6.Location = new Point(28, 557);
+            label7.Location = new Point(28, 677);
         }
 
         private void Form1_MouseMove(object sender, MouseEventArgs e)
@@ -88,7 +95,22 @@ namespace Sport
 
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult result = MessageBox.Show("Вы уверены что хотите выйти?",
+                "Уведомление",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question,
+                MessageBoxDefaultButton.Button1,
+                MessageBoxOptions.DefaultDesktopOnly
+                );
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

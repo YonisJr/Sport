@@ -61,14 +61,15 @@
             // 
             this.button1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold);
             this.button1.Location = new System.Drawing.Point(134, 224);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 29);
+            this.button1.Size = new System.Drawing.Size(125, 37);
             this.button1.TabIndex = 3;
             this.button1.Text = "Вход";
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
