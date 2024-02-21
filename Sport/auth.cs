@@ -19,9 +19,19 @@ namespace Sport
 
         private void button1_Click(object sender, EventArgs e)
         {
-            admin ad    = new admin();
-            ad.Show();
-            this.Hide();
+            if (textBox2.Text == "admin")
+            {
+                admin ad = new admin();
+                ad.Show();
+                this.Hide();
+            }
+            else
+            {
+                emp ad = new emp();
+                ad.Show();
+                this.Hide();
+            }
+
         }
     }
 }

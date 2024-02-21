@@ -41,9 +41,15 @@ namespace Sport
             dataGridView1.Size = new Size(1390, 830);
 
             textBox1.Location = new Point(30, 100);
+            maskedTextBox1.Location = new Point(30, 100);
+
             textBox2.Location = new Point(30,220);
+            maskedTextBox2.Location = new Point(30, 220);
+
             textBox3.Location = new Point(30,340);
+            comboBox1.Location = new Point(30, 340);
             textBox4.Location = new Point(30,460);
+
             textBox5.Location = new Point(30,580);
             textBox6.Location = new Point(30,700);
 
@@ -55,6 +61,33 @@ namespace Sport
             label5.Location = new Point(28, 437);
             label6.Location = new Point(28, 557);
             label7.Location = new Point(28, 677);
+
+            label7.Text = "";
+            label2.Text = "";
+            label3.Text = "";
+            label4.Text = "";
+            label5.Text = "";
+            label6.Text = "";
+            label7.Text = "";
+
+            textBox1.Visible = false;
+            textBox2.Visible = false;
+            textBox3.Visible = false;
+            textBox4.Visible = false;
+            textBox5.Visible = false;
+            textBox6.Visible = false;
+            panel1.Visible = false;
+            panel2.Visible = false;
+            button1.Visible = false;
+            button2.Visible = false;
+            button3.Visible = false;
+            button4.Visible = false;
+            dataGridView1.Visible = false;
+            comboBox1.Visible = false;
+            maskedTextBox1.Visible = false;
+            maskedTextBox2.Visible = false;
+
+
         }
 
         private void Form1_MouseMove(object sender, MouseEventArgs e)
@@ -92,6 +125,7 @@ namespace Sport
         {
 
         }
+        string fas;
 
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -110,6 +144,180 @@ namespace Sport
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
+
+            DialogResult result = MessageBox.Show("Вы уверены что хотите сменить пользователя?",
+                "Уведомление",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question,
+                MessageBoxDefaultButton.Button1,
+                MessageBoxOptions.DefaultDesktopOnly
+                );
+            if (result == DialogResult.Yes)
+            {
+                auth ADM = new auth();
+                ADM.Show();
+                this.Close();
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            switch (fas)
+            {
+
+                case "Участники":
+
+                    
+
+                break;
+
+                case "Соревнования":
+
+                    label3.Text = "Робит";
+
+                break;
+
+                case "Расписание":
+
+                    label4.Text = "ит";
+
+                break;
+            }
+               
+
+               
+                
+        }
+
+        private void участникиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fas = "Участники";
+            label2.Visible = true;
+            label2.Text = "Фамилия";
+            label3.Visible = true;
+            label3.Text = "Имя";
+            label4.Visible = true;
+            label4.Text = "Отчество";
+            label5.Visible = true;
+            label5.Text = "Возраст";
+            label6.Visible = true;
+            label6.Text = "Пол";
+            label7.Visible = true;
+            label7.Text = "Команда";
+
+            textBox1.Visible = true;
+            textBox2.Visible = true;
+            textBox3.Visible = true;
+            textBox4.Visible = true;
+            textBox5.Visible = true;
+            textBox6.Visible = true;
+            comboBox1.Visible = false;
+            maskedTextBox1.Visible = false;
+            maskedTextBox2.Visible = false;
+
+            panel1.Visible = true;
+            panel2.Visible = true;
+
+            button4.Visible = true;
+            button4.Text = "Добавить";
+            button3.Visible = true;
+            button3.Text = "Редактировать";
+            button2.Visible = true;
+            button2.Text = "Удалить";
+            button1.Visible = true;
+            button1.Text = "Обновить";
+            dataGridView1.Visible = true;
+        }
+
+        private void соревнованияToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fas = "Соревнования";
+
+            label2.Visible = true;
+            label2.Text = "Название";
+            label3.Visible = true;
+            label3.Text = "Вид спорта";
+            label4.Visible = true;
+            label4.Text = "Место проведения";
+            label5.Visible = true;
+            label5.Text = "Организатор";
+
+            textBox1.Visible = true;
+            textBox2.Visible = true;
+            textBox3.Visible = true;
+            textBox4.Visible = true;
+            comboBox1.Visible = false;
+            maskedTextBox1.Visible = false;
+            maskedTextBox2.Visible = false;
+
+            textBox5.Visible = false;
+            textBox6.Visible = false;
+
+            panel1.Visible = true;
+            panel2.Visible = true;
+
+            button4.Visible = true;
+            button4.Text = "Добавить";
+            button3.Visible = true;
+            button3.Text = "Редактировать";
+            button2.Visible = true;
+            button2.Text = "Удалить";
+            button1.Visible = true;
+            button1.Text = "Обновить";
+
+            label6.Visible = false;
+            label7.Visible = false;
+
+
+        }
+
+        private void расписаниеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fas = "Расписание";
+
+            comboBox1.Visible = true;
+
+            label2.Visible = true;
+            label2.Text = "Список соревнований";
+            label3.Visible = true;
+            label3.Text = "Дата начала";
+            label4.Visible = true;
+            label4.Text = "Дата окончания";
+
+            maskedTextBox1.Visible = true;
+            maskedTextBox2.Visible = true;
+
+            button4.Visible = true;
+            button4.Text = "Добавить";
+            button3.Visible = true;
+            button3.Text = "Редактировать";
+            button2.Visible = true;
+            button2.Text = "Удалить";
+            button1.Visible = true;
+            button1.Text = "Обновить";
+
+            label5.Visible = false;
+            label6.Visible = false;
+            label7.Visible = false;
+
+            textBox1.Visible = false;
+            textBox2.Visible = false;
+            textBox3.Visible = false;
+            textBox4.Visible = false;
+            textBox5.Visible = false;
+            textBox6.Visible = false;
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void результатыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fas = "Результаты";
+
 
         }
     }
