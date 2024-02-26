@@ -42,9 +42,11 @@ namespace Sport
 
             textBox1.Location = new Point(30, 100);
             maskedTextBox1.Location = new Point(30, 100);
+            comboBox3.Location = new Point(30, 100);
 
             textBox2.Location = new Point(30,220);
             maskedTextBox2.Location = new Point(30, 220);
+            comboBox2.Location = new Point(30, 220);
 
             textBox3.Location = new Point(30,340);
             comboBox1.Location = new Point(30, 340);
@@ -86,6 +88,10 @@ namespace Sport
             comboBox1.Visible = false;
             maskedTextBox1.Visible = false;
             maskedTextBox2.Visible = false;
+            radioButton1.Visible = false;
+            radioButton2.Visible = false;
+            comboBox3.Visible = false;
+            comboBox2.Visible = false;
 
 
         }
@@ -214,6 +220,10 @@ namespace Sport
             comboBox1.Visible = false;
             maskedTextBox1.Visible = false;
             maskedTextBox2.Visible = false;
+            comboBox3.Visible = false;
+            comboBox2.Visible = false;
+            radioButton1.Visible = false;
+            radioButton2.Visible = false;
 
             panel1.Visible = true;
             panel2.Visible = true;
@@ -249,6 +259,10 @@ namespace Sport
             comboBox1.Visible = false;
             maskedTextBox1.Visible = false;
             maskedTextBox2.Visible = false;
+            comboBox3.Visible = false;
+            comboBox2.Visible = false;
+            radioButton1.Visible = false;
+            radioButton2.Visible = false;
 
             textBox5.Visible = false;
             textBox6.Visible = false;
@@ -286,6 +300,10 @@ namespace Sport
 
             maskedTextBox1.Visible = true;
             maskedTextBox2.Visible = true;
+            comboBox3.Visible = false;
+            comboBox2.Visible = false;
+            radioButton1.Visible = false;
+            radioButton2.Visible = false;
 
             button4.Visible = true;
             button4.Text = "Добавить";
@@ -318,6 +336,10 @@ namespace Sport
         {
             fas = "Результаты";
 
+            comboBox3.Visible = true;
+            comboBox2.Visible = true;
+            radioButton1.Visible = true;
+            radioButton2.Visible = true;
 
         }
     }
