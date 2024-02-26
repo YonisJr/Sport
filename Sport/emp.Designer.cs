@@ -33,6 +33,10 @@
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.создатьГрамотуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.участникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.соревнованияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.расписаниеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.результатыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -54,10 +58,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.участникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.соревнованияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.расписаниеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.результатыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
@@ -65,9 +65,12 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.label8 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -110,6 +113,31 @@
             this.создатьГрамотуToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.создатьГрамотуToolStripMenuItem, "создатьГрамотуToolStripMenuItem");
             this.создатьГрамотуToolStripMenuItem.Name = "создатьГрамотуToolStripMenuItem";
+            this.создатьГрамотуToolStripMenuItem.Click += new System.EventHandler(this.создатьГрамотуToolStripMenuItem_Click);
+            // 
+            // участникиToolStripMenuItem
+            // 
+            resources.ApplyResources(this.участникиToolStripMenuItem, "участникиToolStripMenuItem");
+            this.участникиToolStripMenuItem.Name = "участникиToolStripMenuItem";
+            this.участникиToolStripMenuItem.Click += new System.EventHandler(this.участникиToolStripMenuItem_Click);
+            // 
+            // соревнованияToolStripMenuItem
+            // 
+            resources.ApplyResources(this.соревнованияToolStripMenuItem, "соревнованияToolStripMenuItem");
+            this.соревнованияToolStripMenuItem.Name = "соревнованияToolStripMenuItem";
+            this.соревнованияToolStripMenuItem.Click += new System.EventHandler(this.соревнованияToolStripMenuItem_Click);
+            // 
+            // расписаниеToolStripMenuItem
+            // 
+            resources.ApplyResources(this.расписаниеToolStripMenuItem, "расписаниеToolStripMenuItem");
+            this.расписаниеToolStripMenuItem.Name = "расписаниеToolStripMenuItem";
+            this.расписаниеToolStripMenuItem.Click += new System.EventHandler(this.расписаниеToolStripMenuItem_Click);
+            // 
+            // результатыToolStripMenuItem
+            // 
+            resources.ApplyResources(this.результатыToolStripMenuItem, "результатыToolStripMenuItem");
+            this.результатыToolStripMenuItem.Name = "результатыToolStripMenuItem";
+            this.результатыToolStripMenuItem.Click += new System.EventHandler(this.результатыToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -250,30 +278,6 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Name = "label7";
             // 
-            // участникиToolStripMenuItem
-            // 
-            resources.ApplyResources(this.участникиToolStripMenuItem, "участникиToolStripMenuItem");
-            this.участникиToolStripMenuItem.Name = "участникиToolStripMenuItem";
-            this.участникиToolStripMenuItem.Click += new System.EventHandler(this.участникиToolStripMenuItem_Click);
-            // 
-            // соревнованияToolStripMenuItem
-            // 
-            resources.ApplyResources(this.соревнованияToolStripMenuItem, "соревнованияToolStripMenuItem");
-            this.соревнованияToolStripMenuItem.Name = "соревнованияToolStripMenuItem";
-            this.соревнованияToolStripMenuItem.Click += new System.EventHandler(this.соревнованияToolStripMenuItem_Click);
-            // 
-            // расписаниеToolStripMenuItem
-            // 
-            resources.ApplyResources(this.расписаниеToolStripMenuItem, "расписаниеToolStripMenuItem");
-            this.расписаниеToolStripMenuItem.Name = "расписаниеToolStripMenuItem";
-            this.расписаниеToolStripMenuItem.Click += new System.EventHandler(this.расписаниеToolStripMenuItem_Click);
-            // 
-            // результатыToolStripMenuItem
-            // 
-            resources.ApplyResources(this.результатыToolStripMenuItem, "результатыToolStripMenuItem");
-            this.результатыToolStripMenuItem.Name = "результатыToolStripMenuItem";
-            this.результатыToolStripMenuItem.Click += new System.EventHandler(this.результатыToolStripMenuItem_Click);
-            // 
             // comboBox1
             // 
             this.comboBox1.BackColor = System.Drawing.Color.LightBlue;
@@ -323,12 +327,28 @@
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Name = "comboBox3";
             // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.BackColor = System.Drawing.Color.LightBlue;
+            this.numericUpDown2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numericUpDown2.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.numericUpDown2, "numericUpDown2");
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.ReadOnly = true;
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
             // emp
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ControlBox = false;
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.numericUpDown2);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.radioButton2);
@@ -369,6 +389,7 @@
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -412,5 +433,7 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.Label label8;
     }
 }

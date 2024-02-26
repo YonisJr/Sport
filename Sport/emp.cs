@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace Sport
 {
     public partial class emp : Form
@@ -16,6 +18,7 @@ namespace Sport
         public emp()
         {
             InitializeComponent();
+
             this.MouseMove += new MouseEventHandler(Form1_MouseMove);
             button1.Location = new Point(1545, 960);
             button1.Size = new Size(280, 65);
@@ -41,7 +44,6 @@ namespace Sport
             dataGridView1.Size = new Size(1390, 830);
 
             textBox1.Location = new Point(30, 100);
-            maskedTextBox1.Location = new Point(30, 100);
             comboBox3.Location = new Point(30, 100);
 
             textBox2.Location = new Point(30,220);
@@ -50,9 +52,15 @@ namespace Sport
 
             textBox3.Location = new Point(30,340);
             comboBox1.Location = new Point(30, 340);
+            maskedTextBox1.Location = new Point(30, 340);
+
             textBox4.Location = new Point(30,460);
+            radioButton1.Location = new Point(30, 430);
+            radioButton2.Location = new Point(30, 460);
+            numericUpDown2.Location = new Point(30, 548);
 
             textBox5.Location = new Point(30,580);
+
             textBox6.Location = new Point(30,700);
 
             label1.Location = new Point(5,1065);
@@ -63,6 +71,7 @@ namespace Sport
             label5.Location = new Point(28, 437);
             label6.Location = new Point(28, 557);
             label7.Location = new Point(28, 677);
+            label8.Location = new Point(28, 525);
 
             label7.Text = "";
             label2.Text = "";
@@ -71,6 +80,7 @@ namespace Sport
             label5.Text = "";
             label6.Text = "";
             label7.Text = "";
+            label8.Text = "";
 
             textBox1.Visible = false;
             textBox2.Visible = false;
@@ -92,10 +102,11 @@ namespace Sport
             radioButton2.Visible = false;
             comboBox3.Visible = false;
             comboBox2.Visible = false;
+            numericUpDown2.Visible = false;
 
 
         }
-
+        
         private void Form1_MouseMove(object sender, MouseEventArgs e)
         {
             Point mousePosition = PointToClient(MousePosition);
@@ -237,6 +248,9 @@ namespace Sport
             button1.Visible = true;
             button1.Text = "Обновить";
             dataGridView1.Visible = true;
+            label8.Visible = false;
+
+            numericUpDown2.Visible = false;
         }
 
         private void соревнованияToolStripMenuItem_Click(object sender, EventArgs e)
@@ -281,8 +295,9 @@ namespace Sport
 
             label6.Visible = false;
             label7.Visible = false;
+            label8.Visible = false;
 
-
+            numericUpDown2.Visible = false;
         }
 
         private void расписаниеToolStripMenuItem_Click(object sender, EventArgs e)
@@ -290,6 +305,9 @@ namespace Sport
             fas = "Расписание";
 
             comboBox1.Visible = true;
+
+            panel1 .Visible = true;
+            panel2 .Visible = true;
 
             label2.Visible = true;
             label2.Text = "Список соревнований";
@@ -300,10 +318,12 @@ namespace Sport
 
             maskedTextBox1.Visible = true;
             maskedTextBox2.Visible = true;
-            comboBox3.Visible = false;
+            comboBox1.Visible = false;
             comboBox2.Visible = false;
             radioButton1.Visible = false;
             radioButton2.Visible = false;
+
+            comboBox3 .Visible = true;
 
             button4.Visible = true;
             button4.Text = "Добавить";
@@ -317,6 +337,7 @@ namespace Sport
             label5.Visible = false;
             label6.Visible = false;
             label7.Visible = false;
+            label8.Visible = false;
 
             textBox1.Visible = false;
             textBox2.Visible = false;
@@ -324,6 +345,8 @@ namespace Sport
             textBox4.Visible = false;
             textBox5.Visible = false;
             textBox6.Visible = false;
+
+            numericUpDown2.Visible = false; 
 
         }
 
@@ -335,12 +358,99 @@ namespace Sport
         private void результатыToolStripMenuItem_Click(object sender, EventArgs e)
         {
             fas = "Результаты";
-
+            comboBox1.Visible = true;
             comboBox3.Visible = true;
             comboBox2.Visible = true;
             radioButton1.Visible = true;
+            radioButton1.Text = "Победа";
             radioButton2.Visible = true;
+            radioButton2.Text = "Порожение";
+            numericUpDown2.Visible = true;
 
+            panel1.Visible = true;
+            panel2.Visible = true;
+
+            button4.Visible = true;
+            button4.Text = "Добавить";
+            button3.Visible = true;
+            button3.Text = "Редактировать";
+            button2.Visible = true;
+            button2.Text = "Удалить";
+            button1.Visible = true;
+            button1.Text = "Обновить";
+
+            dataGridView1.Visible = true;
+
+            label2.Visible = true;
+            label2.Text = "Соревнования";
+            label3.Visible = true;
+            label3.Text = "Команда";
+            label4.Visible = true;
+            label4.Text = "Участники";
+            label8.Visible = true;
+            label8.Text = "Место";
+            textBox1.Visible = false;
+            textBox2.Visible = false;
+            textBox3.Visible = false;
+            textBox4.Visible = false;
+            textBox5.Visible = false;
+            textBox6.Visible = false;
+            label5.Visible = false;
+            label6.Visible = false;
+            label7.Visible = false;
+
+        }
+
+        private void создатьГрамотуToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Visible =false;
+
+            panel1.Visible = true;
+            panel2.Visible = true;
+
+            button1.Visible = true;
+            button1.Text = "Создать";
+
+            label2.Visible = true;
+            label2.Text = "Соревнования";
+            comboBox3.Visible = true;
+
+            label3.Visible = true;
+            label3.Text = "Участники";
+            comboBox2.Visible = true;
+
+            dataGridView1.Visible = false;
+
+            button2.Visible = false;
+            button3.Visible = false;
+            button4.Visible = false;
+
+            label4.Visible = false;
+            label5.Visible = false;
+            label6.Visible= false;
+            label7.Visible = false;
+            label8.Visible = false;
+
+            textBox1 .Visible = false;
+            textBox2 .Visible = false;
+            textBox3 .Visible = false;
+            textBox4 .Visible = false;
+            textBox5 .Visible = false;
+            textBox6 .Visible = false;
+            
+            radioButton1 .Visible = false;
+            radioButton2 .Visible = false;
+
+            numericUpDown2.Visible = false;
+
+            maskedTextBox1 .Visible = false;
+            maskedTextBox2 .Visible = false;    
+
+            comboBox1 .Visible = false;
+
+
+            
+            
         }
     }
 }
