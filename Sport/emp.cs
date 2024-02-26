@@ -341,6 +341,13 @@ namespace Sport
             radioButton1.Visible = true;
             radioButton2.Visible = true;
 
+            textBox1.Visible = false;
+            textBox2.Visible = false;
+            textBox3.Visible = false;
+            textBox4.Visible = false;
+            textBox5.Visible = false;
+            textBox6.Visible = false;
+
         }
     }
 }
