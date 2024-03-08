@@ -18,6 +18,7 @@ namespace Sport
     public partial class admin : Form
     {
         NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Database=sport;Username=postgres;Password=virtual;Port=5432");
+        //NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Database=sport;Username=YonisJr;Password=0907;Port=5432");
         public admin()
         {
             InitializeComponent();
@@ -498,7 +499,7 @@ namespace Sport
                     case "Соревнования":
 
                         string select = $"select name_sor as Название_соревнования, sport as Вид_спорта, mesto as Место_проведения, organizator as Организатор from sorevnovania ";
-                        string query = $"insert into public.sorevnovania(name_sor, sport, mesto, organizator) values ('Апл','Футбол','Лондон','ФИФА');";
+                        string query = $"insert into public.sorevnovania(name_sor, sport, mesto, organizator) values ('{textBox1.Text}','{textBox2.Text}','{textBox3.Text}','{textBox4.Text}');";
 
                         NpgsqlCommand command = new NpgsqlCommand(query, conn);
 
