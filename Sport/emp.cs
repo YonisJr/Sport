@@ -1,5 +1,6 @@
 ﻿using Npgsql;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -193,11 +194,28 @@ namespace Sport
             {
 
                 case "Участники":
-                    //insert into public.player(surname_pl, name_pl, otch_pl, age, pol, id_team) values('Максимов','Максим','Максимович','22','М',(select id_team from public.team where name_team ='228_team' and strana = 'Russia'));
+                    string select = $"select surname_pl, name_pl, otch_pl, age, pol, name_team, strana from public.player,public.team where public.player.id_team = public.team.id_team";
+                    string query2 = $"insert into public.player(surname_pl, name_pl, otch_pl, age, pol, id_team) values ('{textBox1.Text}','{textBox2.Text}','{textBox3.Text}','{textBox4.Text}','{textBox5.Text}',(select id_team from public.team where name_team ='{textBox6.Text}' and strana = '{textBox7.Text}'));";
 
-                    //insert into public.team(name_team, strana) values('228_team','Russia'); 
+                    string query1 = $"insert into public.team(name_team, strana) values ('{textBox6.Text}','{textBox7.Text}'); ";
+                    NpgsqlCommand command2 = new NpgsqlCommand(query1, conn);
+                    NpgsqlCommand command1 = new NpgsqlCommand(query2, conn);
+                    conn.Open();
+                    // выполняем команду и получаем количество затронутых строк
+                    command2.ExecuteScalar();
+                    int affectedRows = command1.ExecuteNonQuery();
+                    
+                    MessageBox.Show("Добавлено новых записей: " + affectedRows);
+                    dataGridView1.Refresh();
+                    conn.Close();
 
-                break;
+                    conn.Open();
+                    NpgsqlDataAdapter adapter2 = new NpgsqlDataAdapter(select, conn);
+                    DataTable dataTable2 = new DataTable();
+                    adapter2.Fill(dataTable2);
+                    dataGridView1.DataSource = dataTable2;
+                    conn.Close();
+                    break;
 
                 case "Соревнования":
 
@@ -476,6 +494,14 @@ namespace Sport
             //delete from public.player where id_team = (select id_team from team where name_team = '228_team')
 
             //delete from public.team where id_team = (select id_team from team where name_team = '228_team')
+
+            conn.Open();
+            DataTable dataTable1 = new DataTable();
+            string del1 = $"delete from public.player where id_team = (select id_team from team where name_team = '{dataGridView1.SelectedCells[0].Value}')";
+            NpgsqlDataAdapter adapter1 = new NpgsqlDataAdapter(del1, conn);
+            adapter1.Fill(dataTable1);
+            dataGridView1.Rows.Remove(dataGridView1.CurrentRow);
+            conn.Close();
         }
         //поиск
         private void button3_Click(object sender, EventArgs e)
