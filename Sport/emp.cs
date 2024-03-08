@@ -199,7 +199,7 @@ namespace Sport
                     //insert into public.player (surname_pl,name_pl,otch_pl,age,pol,id_team) values ('textBox1.Text','textBox2.Text','textBox3.Text','textBox4.Text','textBox5.Text',(select id_team from public.team where name_team ='textBox6.Text' and strana = 'textBox7.Text'));
 
 
-                    break;
+                break;
 
                 case "Соревнования":
 
