@@ -140,6 +140,7 @@ namespace Sport
             
         }
 
+        //Обновление
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -251,7 +252,7 @@ namespace Sport
             button4.Visible = true;
             button4.Text = "Добавить";
             button3.Visible = true;
-            button3.Text = "Редактировать";
+            button3.Text = "Поиск";
             button2.Visible = true;
             button2.Text = "Удалить";
             button1.Visible = true;
@@ -296,7 +297,7 @@ namespace Sport
             button4.Visible = true;
             button4.Text = "Добавить";
             button3.Visible = true;
-            button3.Text = "Редактировать";
+            button3.Text = "Поиск";
             button2.Visible = true;
             button2.Text = "Удалить";
             button1.Visible = true;
@@ -340,7 +341,7 @@ namespace Sport
             button4.Visible = true;
             button4.Text = "Добавить";
             button3.Visible = true;
-            button3.Text = "Редактировать";
+            button3.Text = "Поиск";
             button2.Visible = true;
             button2.Text = "Удалить";
             button1.Visible = true;
@@ -386,7 +387,8 @@ namespace Sport
             button4.Visible = true;
             button4.Text = "Добавить";
             button3.Visible = true;
-            button3.Text = "Редактировать";
+            button3.Text = "Поиск" +
+                "";
             button2.Visible = true;
             button2.Text = "Удалить";
             button1.Visible = true;
@@ -467,8 +469,13 @@ namespace Sport
 
 
         }
-
+        //Удаление
         private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+        //поиск
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }
