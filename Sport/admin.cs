@@ -555,6 +555,15 @@ namespace Sport
 
                     //select name_sor, sport, mesto, organizator  from public.sorevnovania 
 
+                    conn.Open();
+                    NpgsqlCommand select = new NpgsqlCommand("select name_sor, sport, mesto, organizator  from sorevnovania ", conn);
+                    NpgsqlDataAdapter adapter2 = new NpgsqlDataAdapter(select);
+                    DataTable dataTable2 = new DataTable();
+                    dataTable2.Clear();
+                    adapter2.Fill(dataTable2);
+                    dataGridView1.DataSource = dataTable2;
+                    conn.Close();
+
                     break;
 
                 case "Расписание":
@@ -592,6 +601,15 @@ namespace Sport
 
                     //select name_sor, sport, mesto, organizator from public.sorevnovania where name_sor = 'Апл'
 
+                    conn.Open();
+                    NpgsqlCommand select = new NpgsqlCommand($"select name_sor, sport, mesto, organizator from public.sorevnovania where name_sor = '{textBox1.Text}'", conn);
+                    NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(select);
+                    DataTable dataTable = new DataTable();
+                    dataTable.Clear();
+                    adapter.Fill(dataTable);
+                    dataGridView1.DataSource = dataTable;
+                    conn.Close();
+
                     break;
 
                 case "Расписание":
@@ -628,6 +646,14 @@ namespace Sport
                 case "Соревнования":
 
                     //delete from public.sorevnovania where name_sor = 'Апл'
+
+                    conn.Open();
+                    DataTable dataTable = new DataTable();
+                    string del = $"DELETE FROM sorevnovania WHERE name_sor = '{dataGridView1.SelectedCells[0].Value}'";
+                    NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(del, conn);
+                    adapter.Fill(dataTable);
+                    dataGridView1.Rows.Remove(dataGridView1.CurrentRow);
+                    conn.Close();
 
                     break;
 
