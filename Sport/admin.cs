@@ -190,7 +190,7 @@ namespace Sport
             button4.Visible = true;
             button4.Text = "Добавить";
             button3.Visible = true;
-            button3.Text = "Редактировать";
+            button3.Text = "Поиск";
             button2.Visible = true;
             button2.Text = "Удалить";
             button1.Visible = true;
@@ -235,7 +235,7 @@ namespace Sport
             button4.Visible = true;
             button4.Text = "Добавить";
             button3.Visible = true;
-            button3.Text = "Редактировать";
+            button3.Text = "Поиск";
             button2.Visible = true;
             button2.Text = "Удалить";
             button1.Visible = true;
@@ -276,7 +276,7 @@ namespace Sport
             button4.Visible = true;
             button4.Text = "Добавить";
             button3.Visible = true;
-            button3.Text = "Редактировать";
+            button3.Text = "Поиск";
             button2.Visible = true;
             button2.Text = "Удалить";
             button1.Visible = true;
@@ -315,7 +315,7 @@ namespace Sport
             button4.Visible = true;
             button4.Text = "Добавить";
             button3.Visible = true;
-            button3.Text = "Редактировать";
+            button3.Text = "Поиск";
             button2.Visible = true;
             button2.Text = "Удалить";
             button1.Visible = true;
@@ -496,9 +496,10 @@ namespace Sport
 
                     case "Соревнования":
 
+                        //insert into public.sorevnovania(name_sor, sport, mesto, organizator) values ('Апл','Футбол','Лондон','ФИФА');
 
 
-                    break;
+                        break;
 
                     case "Расписание":
 
@@ -534,9 +535,9 @@ namespace Sport
 
                 case "Соревнования":
 
+                    //select name_sor, sport, mesto, organizator  from public.sorevnovania 
 
-
-                break;
+                    break;
 
                 case "Расписание":
 
@@ -557,7 +558,7 @@ namespace Sport
                 break;
             }
         }
-        //редактировать
+        //поиск
         private void button3_Click(object sender, EventArgs e)
         {
             switch (fas)
@@ -571,9 +572,9 @@ namespace Sport
 
                 case "Соревнования":
 
+                    //select name_sor, sport, mesto, organizator from public.sorevnovania where name_sor = 'Апл'
 
-
-                break;
+                    break;
 
                 case "Расписание":
 
@@ -608,9 +609,9 @@ namespace Sport
 
                 case "Соревнования":
 
+                    //delete from public.sorevnovania where name_sor = 'Апл'
 
-
-                break;
+                    break;
 
                 case "Расписание":
 
