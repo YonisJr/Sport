@@ -11,12 +11,13 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Npgsql;
+using System.Collections;
 
 namespace Sport
 {
     public partial class admin : Form
     {
-        NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Database=sport;Username=YonisJr;Password=0907;Port=5432");
+        NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Database=sport;Username=postgres;Password=virtual;Port=5432");
         public admin()
         {
             InitializeComponent();
@@ -496,8 +497,24 @@ namespace Sport
 
                     case "Соревнования":
 
-                        //insert into public.sorevnovania(name_sor, sport, mesto, organizator) values ('Апл','Футбол','Лондон','ФИФА');
+                        string select = $"select name_sor as Название_соревнования, sport as Вид_спорта, mesto as Место_проведения, organizator as Организатор from sorevnovania ";
+                        string query = $"insert into public.sorevnovania(name_sor, sport, mesto, organizator) values ('Апл','Футбол','Лондон','ФИФА');";
 
+                        NpgsqlCommand command = new NpgsqlCommand(query, conn);
+
+                        conn.Open();
+                        // выполняем команду и получаем количество затронутых строк
+                        int affectedRows = command.ExecuteNonQuery();
+                        MessageBox.Show("Добавлено новых записей: " + affectedRows);
+                        dataGridView1.Refresh();
+                        conn.Close();
+
+                        conn.Open();
+                        NpgsqlDataAdapter adapter2 = new NpgsqlDataAdapter(select, conn);
+                        DataTable dataTable2 = new DataTable();
+                        adapter2.Fill(dataTable2);
+                        dataGridView1.DataSource = dataTable2;
+                        conn.Close();
 
                         break;
 
