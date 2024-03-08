@@ -480,7 +480,7 @@ namespace Sport
         //поиск
         private void button3_Click(object sender, EventArgs e)
         {
-
+            //select surname_pl, name_pl, otch_pl, age, pol, name_team, strana from public.player,public.team where public.player.id_team = public.team.id_team and name_team = 'Сборная Англии'
         }
     }
 }
