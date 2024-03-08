@@ -63,6 +63,8 @@ namespace Sport
 
             textBox6.Location = new Point(30,700);
 
+            textBox7.Location = new Point(30, 820);
+
             label1.Location = new Point(5,1065);
 
             label2.Location = new Point(28, 77);
@@ -72,6 +74,7 @@ namespace Sport
             label6.Location = new Point(28, 557);
             label7.Location = new Point(28, 677);
             label8.Location = new Point(28, 525);
+            label9.Location = new Point(29, 797);
 
             label7.Text = "";
             label2.Text = "";
@@ -81,6 +84,7 @@ namespace Sport
             label6.Text = "";
             label7.Text = "";
             label8.Text = "";
+            label9.Text = "";
 
             textBox1.Visible = false;
             textBox2.Visible = false;
@@ -88,6 +92,7 @@ namespace Sport
             textBox4.Visible = false;
             textBox5.Visible = false;
             textBox6.Visible = false;
+            textBox7.Visible = false;
             panel1.Visible = false;
             panel2.Visible = false;
             button1.Visible = false;
@@ -221,6 +226,8 @@ namespace Sport
             label6.Text = "Пол";
             label7.Visible = true;
             label7.Text = "Команда";
+            label9.Visible = true;
+            label9.Text = "Страна";
 
             textBox1.Visible = true;
             textBox2.Visible = true;
@@ -228,6 +235,7 @@ namespace Sport
             textBox4.Visible = true;
             textBox5.Visible = true;
             textBox6.Visible = true;
+            textBox7.Visible = true;
             comboBox1.Visible = false;
             maskedTextBox1.Visible = false;
             maskedTextBox2.Visible = false;
