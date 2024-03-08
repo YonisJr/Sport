@@ -10,7 +10,7 @@ namespace Sport
 {
     internal class Data
     {
-        NpgsqlConnection conn = new NpgsqlConnection("port = 3456 , database = sport, pawword = 0907, host = localhost");
+        NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Database=sport;Username=YonisJr;Password=0907;Port=5432");
 
     }
 }

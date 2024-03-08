@@ -74,7 +74,7 @@ namespace Sport
             label6.Location = new Point(28, 557);
             label7.Location = new Point(28, 677);
             label8.Location = new Point(28, 525);
-            label9.Location = new Point(29, 797);
+            label9.Location = new Point(28, 797);
 
             label7.Text = "";
             label2.Text = "";
@@ -184,6 +184,7 @@ namespace Sport
 
         private void button4_Click(object sender, EventArgs e)
         {
+            
             switch (fas)
             {
 
@@ -205,10 +206,7 @@ namespace Sport
 
                 break;
             }
-               
-
-               
-                
+                    
         }
 
         private void участникиToolStripMenuItem_Click(object sender, EventArgs e)
@@ -306,6 +304,9 @@ namespace Sport
             label8.Visible = false;
 
             numericUpDown2.Visible = false;
+
+            textBox7.Visible = false;
+            label9.Visible = false;
         }
 
         private void расписаниеToolStripMenuItem_Click(object sender, EventArgs e)
@@ -354,8 +355,9 @@ namespace Sport
             textBox5.Visible = false;
             textBox6.Visible = false;
 
-            numericUpDown2.Visible = false; 
-
+            numericUpDown2.Visible = false;
+            textBox7.Visible = false;
+            label9.Visible = false;
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -406,7 +408,8 @@ namespace Sport
             label5.Visible = false;
             label6.Visible = false;
             label7.Visible = false;
-
+            textBox7.Visible = false;
+            label9.Visible = false;
         }
 
         private void создатьГрамотуToolStripMenuItem_Click(object sender, EventArgs e)
@@ -456,9 +459,10 @@ namespace Sport
 
             comboBox1 .Visible = false;
 
+            textBox7.Visible = false;
+            label9.Visible = false;
 
-            
-            
+
         }
     }
 }
