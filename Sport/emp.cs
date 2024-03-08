@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Numerics;
 using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
@@ -472,7 +473,9 @@ namespace Sport
         //Удаление
         private void button2_Click(object sender, EventArgs e)
         {
+            //delete from public.player where id_team = (select id_team from team where name_team = '228_team')
 
+            //delete from public.team where id_team = (select id_team from team where name_team = '228_team')
         }
         //поиск
         private void button3_Click(object sender, EventArgs e)
