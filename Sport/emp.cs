@@ -55,6 +55,8 @@ namespace Sport
             textBox5.Location = new Point(30,580);
             textBox6.Location = new Point(30,700);
 
+            textBox7.Location = new Point(30, 820);
+
             label1.Location = new Point(5,1065);
 
             label2.Location = new Point(28, 77);
@@ -63,6 +65,8 @@ namespace Sport
             label5.Location = new Point(28, 437);
             label6.Location = new Point(28, 557);
             label7.Location = new Point(28, 677);
+            label8.Location = new Point(28, 525);
+            label9.Location = new Point(28, 797);
 
             label7.Text = "";
             label2.Text = "";
@@ -71,6 +75,8 @@ namespace Sport
             label5.Text = "";
             label6.Text = "";
             label7.Text = "";
+            label8.Text = "";
+            label9.Text = "";
 
             textBox1.Visible = false;
             textBox2.Visible = false;
@@ -78,6 +84,7 @@ namespace Sport
             textBox4.Visible = false;
             textBox5.Visible = false;
             textBox6.Visible = false;
+            textBox7.Visible = false;
             panel1.Visible = false;
             panel2.Visible = false;
             button1.Visible = false;
@@ -142,10 +149,18 @@ namespace Sport
                 MessageBoxDefaultButton.Button1,
                 MessageBoxOptions.DefaultDesktopOnly
                 );
+            if (result == DialogResult.No)
+            {
+                emp emp = new emp();
+                emp.Show();
+                this.Focus();
+            }
             if (result == DialogResult.Yes)
             {
                 Application.Exit();
             }
+            
+                
         }
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
@@ -158,12 +173,19 @@ namespace Sport
                 MessageBoxDefaultButton.Button1,
                 MessageBoxOptions.DefaultDesktopOnly
                 );
+            if (result == DialogResult.No)
+            {
+                emp emp = new emp();
+                emp.Show();
+                this.Focus();
+            }
             if (result == DialogResult.Yes)
             {
                 auth ADM = new auth();
                 ADM.Show();
                 this.Close();
             }
+            
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -173,19 +195,21 @@ namespace Sport
 
                 case "Участники":
 
-                    
+                    //insert into public.team (name_team,strana) values ('textBox6.Text','textBox7.Text');
+                    //insert into public.player (surname_pl,name_pl,otch_pl,age,pol,id_team) values ('textBox1.Text','textBox2.Text','textBox3.Text','textBox4.Text','textBox5.Text',(select id_team from public.team where name_team ='textBox6.Text' and strana = 'textBox7.Text'));
 
-                break;
+
+                    break;
 
                 case "Соревнования":
 
-                    label3.Text = "Робит";
+                    
 
                 break;
 
                 case "Расписание":
 
-                    label4.Text = "ит";
+                   
 
                 break;
             }
@@ -210,6 +234,8 @@ namespace Sport
             label6.Text = "Пол";
             label7.Visible = true;
             label7.Text = "Команда";
+            label9.Visible = true;
+            label9.Text = "Страна";
 
             textBox1.Visible = true;
             textBox2.Visible = true;
@@ -217,6 +243,7 @@ namespace Sport
             textBox4.Visible = true;
             textBox5.Visible = true;
             textBox6.Visible = true;
+            textBox7.Visible = true;
             comboBox1.Visible = false;
             maskedTextBox1.Visible = false;
             maskedTextBox2.Visible = false;
@@ -281,8 +308,10 @@ namespace Sport
 
             label6.Visible = false;
             label7.Visible = false;
-
-
+            label8.Visible = false;
+            label9.Visible = false;
+            textBox7.Visible = false;
+            numericUpDown2.Visible = false;
         }
 
         private void расписаниеToolStripMenuItem_Click(object sender, EventArgs e)
@@ -324,6 +353,8 @@ namespace Sport
             textBox4.Visible = false;
             textBox5.Visible = false;
             textBox6.Visible = false;
+            label9.Visible = false;
+            textBox7.Visible = false;
 
         }
 
@@ -347,6 +378,69 @@ namespace Sport
             textBox4.Visible = false;
             textBox5.Visible = false;
             textBox6.Visible = false;
+            label5.Visible = false;
+            label6.Visible = false;
+            label7.Visible = false;
+            label9.Visible = false;
+            textBox7.Visible = false;
+
+        }
+
+        private void создатьГрамотуToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Visible =false;
+
+            panel1.Visible = true;
+            panel2.Visible = true;
+
+            button1.Visible = true;
+            button1.Text = "Создать";
+
+            label2.Visible = true;
+            label2.Text = "Соревнования";
+            comboBox3.Visible = true;
+
+            label3.Visible = true;
+            label3.Text = "Участники";
+            comboBox2.Visible = true;
+
+            dataGridView1.Visible = false;
+
+            button2.Visible = false;
+            button3.Visible = false;
+            button4.Visible = false;
+
+            label4.Visible = false;
+            label5.Visible = false;
+            label6.Visible= false;
+            label7.Visible = false;
+            label8.Visible = false;
+
+            textBox1 .Visible = false;
+            textBox2 .Visible = false;
+            textBox3 .Visible = false;
+            textBox4 .Visible = false;
+            textBox5 .Visible = false;
+            textBox6 .Visible = false;
+            
+            radioButton1 .Visible = false;
+            radioButton2 .Visible = false;
+
+            numericUpDown2.Visible = false;
+
+            maskedTextBox1 .Visible = false;
+            maskedTextBox2 .Visible = false;
+            label9.Visible = false;
+            textBox7.Visible = false;
+            comboBox1 .Visible = false;
+
+
+            
+            
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }
