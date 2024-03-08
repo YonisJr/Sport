@@ -183,7 +183,7 @@ namespace Sport
                 this.Close();
             }
         }
-
+        //добавление
         private void button4_Click(object sender, EventArgs e)
         {
             
@@ -191,8 +191,9 @@ namespace Sport
             {
 
                 case "Участники":
+                    //insert into public.player(surname_pl, name_pl, otch_pl, age, pol, id_team) values('Максимов','Максим','Максимович','22','М',(select id_team from public.team where name_team ='228_team' and strana = 'Russia'));
 
-                    
+                    //insert into public.team(name_team, strana) values('228_team','Russia'); 
 
                 break;
 
@@ -464,6 +465,11 @@ namespace Sport
             textBox7.Visible = false;
             label9.Visible = false;
 
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
 
         }
     }

@@ -121,6 +121,31 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1529, 34</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
   <data name="выходToolStripMenuItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
@@ -258,31 +283,6 @@
   <data name="результатыToolStripMenuItem.Text" xml:space="preserve">
     <value>Результаты</value>
   </data>
-  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1529, 34</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>32</value>
-  </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -320,7 +320,7 @@
     <value>NoControl</value>
   </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>337, 466</value>
+    <value>378, 466</value>
   </data>
   <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
     <value>230, 54</value>
@@ -374,7 +374,7 @@
     <value>NoControl</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>890, 466</value>
+    <value>649, 544</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
     <value>230, 54</value>
@@ -440,7 +440,7 @@
     <value>NoControl</value>
   </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>62, 466</value>
+    <value>401, 544</value>
   </data>
   <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
     <value>230, 54</value>
@@ -783,7 +783,7 @@
 </value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 268</value>
+    <value>16, 375</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>184, 85</value>
@@ -804,7 +804,7 @@
     <value>25</value>
   </data>
   <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>890, 291</value>
+    <value>922, 426</value>
   </data>
   <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1077, 509</value>
@@ -900,7 +900,7 @@
     <value>Calibri, 21.75pt</value>
   </data>
   <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>956, 84</value>
+    <value>946, 50</value>
   </data>
   <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>422, 43</value>
@@ -924,7 +924,7 @@
     <value>Calibri, 21.75pt</value>
   </data>
   <data name="textBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>956, 145</value>
+    <value>946, 111</value>
   </data>
   <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>422, 43</value>
@@ -948,7 +948,7 @@
     <value>Calibri, 21.75pt</value>
   </data>
   <data name="textBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>956, 207</value>
+    <value>946, 173</value>
   </data>
   <data name="textBox6.Size" type="System.Drawing.Size, System.Drawing">
     <value>422, 43</value>
@@ -1194,7 +1194,7 @@
     <value>Calibri, 21.75pt</value>
   </data>
   <data name="maskedTextBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>478, 291</value>
+    <value>494, 317</value>
   </data>
   <data name="maskedTextBox1.Mask" xml:space="preserve">
     <value>00/00/0000</value>
@@ -1221,7 +1221,7 @@
     <value>Calibri, 21.75pt</value>
   </data>
   <data name="maskedTextBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>478, 359</value>
+    <value>494, 385</value>
   </data>
   <data name="maskedTextBox2.Mask" xml:space="preserve">
     <value>00/00/0000</value>
@@ -1251,7 +1251,7 @@
     <value>Calibri, 14.25pt, style=Bold</value>
   </data>
   <data name="radioButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 207</value>
+    <value>12, 268</value>
   </data>
   <data name="radioButton1.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 27</value>
@@ -1284,7 +1284,7 @@
     <value>NoControl</value>
   </data>
   <data name="radioButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 242</value>
+    <value>12, 301</value>
   </data>
   <data name="radioButton2.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 27</value>
@@ -1395,7 +1395,7 @@
     <value>Calibri, 14.25pt, style=Bold</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>185, 126</value>
+    <value>16, 195</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 23</value>
@@ -1452,7 +1452,7 @@
     <value>NoControl</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>596, 337</value>
+    <value>16, 218</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 23</value>

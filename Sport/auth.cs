@@ -40,5 +40,10 @@ namespace Sport
         {
             Application.Exit();
         }
+
+        private void auth_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
