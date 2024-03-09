@@ -467,7 +467,7 @@ namespace Sport
                 case "Участники":
 
                     conn.Open();
-                    NpgsqlCommand select = new NpgsqlCommand($"select surname_pl, name_pl, otch_pl, age, pol, name_team, strana from public.player,public.team where public.player.id_team = public.team.id_team and name_team = '{textBox1.Text}'", conn);
+                    NpgsqlCommand select = new NpgsqlCommand($"select surname_pl, name_pl, otch_pl, age, pol, name_team, strana from public.player,public.team where public.player.id_team = public.team.id_team and name_team = '{textBox6.Text}'", conn);
                     NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(select);
                     DataTable dataTable = new DataTable();
                     dataTable.Clear();
