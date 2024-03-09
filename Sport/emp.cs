@@ -41,7 +41,7 @@ namespace Sport
             panel2.Location = new Point(-1, 900);
             panel2.Size = new Size(1922, 10);
 
-            pictureBox1.Size = new Size(340,200);
+            pictureBox1.Size = new Size(340, 200);
             pictureBox1.Location = new Point(130, 910);
 
             dataGridView1.Location = new Point(513, 52);
@@ -50,26 +50,26 @@ namespace Sport
             textBox1.Location = new Point(30, 100);
             comboBox3.Location = new Point(30, 100);
 
-            textBox2.Location = new Point(30,220);
+            textBox2.Location = new Point(30, 220);
             maskedTextBox2.Location = new Point(30, 220);
             comboBox2.Location = new Point(30, 220);
 
-            textBox3.Location = new Point(30,340);
+            textBox3.Location = new Point(30, 340);
             comboBox1.Location = new Point(30, 340);
             maskedTextBox1.Location = new Point(30, 340);
 
-            textBox4.Location = new Point(30,460);
+            textBox4.Location = new Point(30, 460);
             radioButton1.Location = new Point(30, 430);
             radioButton2.Location = new Point(30, 460);
             numericUpDown2.Location = new Point(30, 548);
 
-            textBox5.Location = new Point(30,580);
+            textBox5.Location = new Point(30, 580);
 
-            textBox6.Location = new Point(30,700);
+            textBox6.Location = new Point(30, 700);
 
             textBox7.Location = new Point(30, 820);
 
-            label1.Location = new Point(5,1065);
+            label1.Location = new Point(5, 1065);
 
             label2.Location = new Point(28, 77);
             label3.Location = new Point(28, 197);
@@ -115,7 +115,7 @@ namespace Sport
 
 
         }
-        
+
         private void Form1_MouseMove(object sender, MouseEventArgs e)
         {
             Point mousePosition = PointToClient(MousePosition);
@@ -139,14 +139,10 @@ namespace Sport
 
         private void emp_Load(object sender, EventArgs e)
         {
-            
+
         }
 
-        //Обновление
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //select surname_pl, name_pl, otch_pl, age, pol, name_team, strana from public.player,public.team where public.player.id_team = public.team.id_team
-        }
+
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -186,51 +182,7 @@ namespace Sport
                 this.Close();
             }
         }
-        //добавление
-        private void button4_Click(object sender, EventArgs e)
-        {
-            
-            switch (fas)
-            {
-
-                case "Участники":
-                    string select = $"select surname_pl, name_pl, otch_pl, age, pol, name_team, strana from public.player,public.team where public.player.id_team = public.team.id_team";
-                    string query2 = $"insert into public.player(surname_pl, name_pl, otch_pl, age, pol, id_team) values ('{textBox1.Text}','{textBox2.Text}','{textBox3.Text}','{textBox4.Text}','{textBox5.Text}',(select id_team from public.team where name_team ='{textBox6.Text}' and strana = '{textBox7.Text}'));";
-
-                    string query1 = $"insert into public.team(name_team, strana) values ('{textBox6.Text}','{textBox7.Text}'); ";
-                    NpgsqlCommand command2 = new NpgsqlCommand(query1, conn);
-                    NpgsqlCommand command1 = new NpgsqlCommand(query2, conn);
-                    conn.Open();
-                    // выполняем команду и получаем количество затронутых строк
-                    command2.ExecuteScalar();
-                    int affectedRows = command1.ExecuteNonQuery();
-                    
-                    MessageBox.Show("Добавлено новых записей: " + affectedRows);
-                    dataGridView1.Refresh();
-                    conn.Close();
-
-                    conn.Open();
-                    NpgsqlDataAdapter adapter2 = new NpgsqlDataAdapter(select, conn);
-                    DataTable dataTable2 = new DataTable();
-                    adapter2.Fill(dataTable2);
-                    dataGridView1.DataSource = dataTable2;
-                    conn.Close();
-                    break;
-
-                case "Соревнования":
-
-                    label3.Text = "Робит";
-
-                break;
-
-                case "Расписание":
-
-                    label4.Text = "ит";
-
-                break;
-            }
-                    
-        }
+        
 
         private void участникиToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -338,8 +290,8 @@ namespace Sport
 
             comboBox1.Visible = true;
 
-            panel1 .Visible = true;
-            panel2 .Visible = true;
+            panel1.Visible = true;
+            panel2.Visible = true;
 
             label2.Visible = true;
             label2.Text = "Список соревнований";
@@ -355,7 +307,7 @@ namespace Sport
             radioButton1.Visible = false;
             radioButton2.Visible = false;
 
-            comboBox3 .Visible = true;
+            comboBox3.Visible = true;
 
             button4.Visible = true;
             button4.Text = "Добавить";
@@ -438,7 +390,7 @@ namespace Sport
 
         private void создатьГрамотуToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            dataGridView1.Visible =false;
+            dataGridView1.Visible = false;
 
             panel1.Visible = true;
             panel2.Visible = true;
@@ -462,26 +414,26 @@ namespace Sport
 
             label4.Visible = false;
             label5.Visible = false;
-            label6.Visible= false;
+            label6.Visible = false;
             label7.Visible = false;
             label8.Visible = false;
 
-            textBox1 .Visible = false;
-            textBox2 .Visible = false;
-            textBox3 .Visible = false;
-            textBox4 .Visible = false;
-            textBox5 .Visible = false;
-            textBox6 .Visible = false;
-            
-            radioButton1 .Visible = false;
-            radioButton2 .Visible = false;
+            textBox1.Visible = false;
+            textBox2.Visible = false;
+            textBox3.Visible = false;
+            textBox4.Visible = false;
+            textBox5.Visible = false;
+            textBox6.Visible = false;
+
+            radioButton1.Visible = false;
+            radioButton2.Visible = false;
 
             numericUpDown2.Visible = false;
 
-            maskedTextBox1 .Visible = false;
-            maskedTextBox2 .Visible = false;    
+            maskedTextBox1.Visible = false;
+            maskedTextBox2.Visible = false;
 
-            comboBox1 .Visible = false;
+            comboBox1.Visible = false;
 
             textBox7.Visible = false;
             label9.Visible = false;
@@ -506,7 +458,148 @@ namespace Sport
         //поиск
         private void button3_Click(object sender, EventArgs e)
         {
+
             //select surname_pl, name_pl, otch_pl, age, pol, name_team, strana from public.player,public.team where public.player.id_team = public.team.id_team and name_team = 'Сборная Англии'
+            switch (fas)
+            {
+
+                case "Участники":
+
+                    conn.Open();
+                    NpgsqlCommand select = new NpgsqlCommand($"select surname_pl, name_pl, otch_pl, age, pol, name_team, strana from public.player,public.team where public.player.id_team = public.team.id_team and name_team = '{textBox1.Text}'", conn);
+                    NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(select);
+                    DataTable dataTable = new DataTable();
+                    dataTable.Clear();
+                    adapter.Fill(dataTable);
+                    dataGridView1.DataSource = dataTable;
+                    conn.Close();
+
+                    break;
+
+                case "Соревнования":
+
+                    //select name_sor, sport, mesto, organizator from public.sorevnovania where name_sor = 'Апл'
+
+                    conn.Open();
+                    NpgsqlCommand select1 = new NpgsqlCommand($"select name_sor, sport, mesto, organizator from public.sorevnovania where name_sor = '{textBox1.Text}'", conn);
+                    NpgsqlDataAdapter adapter1 = new NpgsqlDataAdapter(select1);
+                    DataTable dataTable1 = new DataTable();
+                    dataTable1.Clear();
+                    adapter1.Fill(dataTable1);
+                    dataGridView1.DataSource = dataTable1;
+                    conn.Close();
+
+                    break;
+
+                case "Результаты":
+
+
+
+                    break;
+
+                case "Расписание":
+
+
+
+                    break;
+
+                case "Сотрудники":
+
+
+
+                    break;
+
+                case "Журнал аудита":
+
+
+
+                    break;
+            }
+        }
+        //Обновление
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //select surname_pl, name_pl, otch_pl, age, pol, name_team, strana from public.player,public.team where public.player.id_team = public.team.id_team
+            switch (fas)
+            {
+
+                case "Участники":
+
+                    conn.Open();
+                    NpgsqlCommand select = new NpgsqlCommand("select surname_pl, name_pl, otch_pl, age, pol, name_team, strana from public.player,public.team where public.player.id_team = public.team.id_team", conn);
+                    NpgsqlDataAdapter adapter2 = new NpgsqlDataAdapter(select);
+                    DataTable dataTable2 = new DataTable();
+                    dataTable2.Clear();
+                    adapter2.Fill(dataTable2);
+                    dataGridView1.DataSource = dataTable2;
+                    conn.Close();
+
+                break;
+
+                case "Соревнования":
+
+
+
+                break;
+
+                case "Расписание":
+
+
+
+                break;
+
+                case "Результаты":
+
+
+
+                break;
+
+            }
+        }
+        //добавление
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+            switch (fas)
+            {
+
+                case "Участники":
+                    string select = $"select surname_pl, name_pl, otch_pl, age, pol, name_team, strana from public.player,public.team where public.player.id_team = public.team.id_team";
+                    string query2 = $"insert into public.player(surname_pl, name_pl, otch_pl, age, pol, id_team) values ('{textBox1.Text}','{textBox2.Text}','{textBox3.Text}','{textBox4.Text}','{textBox5.Text}',(select id_team from public.team where name_team ='{textBox6.Text}' and strana = '{textBox7.Text}'));";
+
+                    string query1 = $"insert into public.team(name_team, strana) values ('{textBox6.Text}','{textBox7.Text}'); ";
+                    NpgsqlCommand command2 = new NpgsqlCommand(query1, conn);
+                    NpgsqlCommand command1 = new NpgsqlCommand(query2, conn);
+                    conn.Open();
+                    // выполняем команду и получаем количество затронутых строк
+                    command2.ExecuteScalar();
+                    int affectedRows = command1.ExecuteNonQuery();
+
+                    MessageBox.Show("Добавлено новых записей: " + affectedRows);
+                    dataGridView1.Refresh();
+                    conn.Close();
+
+                    conn.Open();
+                    NpgsqlDataAdapter adapter2 = new NpgsqlDataAdapter(select, conn);
+                    DataTable dataTable2 = new DataTable();
+                    adapter2.Fill(dataTable2);
+                    dataGridView1.DataSource = dataTable2;
+                    conn.Close();
+                    break;
+
+                case "Соревнования":
+
+                    label3.Text = "Робит";
+
+                    break;
+
+                case "Расписание":
+
+                    label4.Text = "ит";
+
+                    break;
+            }
+
         }
     }
 }
