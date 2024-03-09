@@ -13,37 +13,54 @@ namespace Sport
 {
     public partial class auth : Form
     {
-        NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Database=sport;Username=YonisJr;Password=0907;Port=5432");
+        private Data data;
         public auth()
         {
             InitializeComponent();
+            data = new Data();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox2.Text == "admin")
+            string username = textBox1.Text;
+            string password = textBox2.Text;
+
+            // Проверка аутентификации
+            bool isAuthenticated = data.AuthenticateUser(username, password);
+
+            if (isAuthenticated)
             {
-                admin ad = new admin();
-                ad.Show();
-                this.Hide();
+                // Получение должности работника
+                string position = data.GetEmployeePosition(username);
+
+                // Открытие соответствующей формы в зависимости от должности
+                if (position == "Администратор")
+                {
+                    admin a = new admin();
+                    a.Show();
+                }
+                else if (position == "Менеджер")
+                {
+                    emp emp = new emp();
+                    emp.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Неизвестная должность");
+                }
             }
             else
             {
-                emp ad = new emp();
-                ad.Show();
-                this.Hide();
+                MessageBox.Show("Неверный логин или пароль");
             }
-
         }
-
-        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void auth_Load(object sender, EventArgs e)
         {
 
+        }
+        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
